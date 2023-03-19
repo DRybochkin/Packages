@@ -21,7 +21,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "OKTracer",
-            url: "https://github.com/DRybochkin/Packages/files/11011284/OKTracer.xcframework.zip",
-            checksum: "543dbca5f62a27194b4ef488bac6646b32617b3ca3ebbf4cb3ce0ee3561a8ba3")
+            url: "https://github.com/DRybochkin/Packages/files/11011512/OKTracer.xcframework.zip",
+            checksum: "9373fdee27eda6c2a79c45a7abca12b528bc763c52fb4d90c381ed1112d3e186")
     ]
 )
