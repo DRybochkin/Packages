@@ -17,11 +17,28 @@ let package = Package(
     targets: [
         .target(
             name: "OKTracerPackage",
-            path: "Sources"
-        ),
+            path: "Sources",
+            swiftSettings: [
+                .define("TRACER_SPM"),
+            ]
+       ),
         .binaryTarget(
             name: "OKTracer",
-            url: "https://github.com/DRybochkin/Packages/files/11011512/OKTracer.xcframework.zip",
-            checksum: "9373fdee27eda6c2a79c45a7abca12b528bc763c52fb4d90c381ed1112d3e186")
+            url: "https://github.com/DRybochkin/Packages/files/11015698/OKTracer.xcframework.zip",
+            checksum: "db12c7d056ef0cbea2a31bbb56a8bddc39ab46a54355e80b587cd4b6c9b95dfc",
+            linkerSettings: [
+                .linkedFramework("Foundation"),
+                .linkedFramework("UIKit"),
+                .linkedLibrary("z"),
+                .unsafeFlags(["-weak-lswiftDemangle"])
+            ],
+            cSettings: [
+                .define("PLCR_PRIVATE"),
+                .define("PLCF_RELEASE_BUILD"),
+                .define("PLCRASHREPORTER_PREFIX", to: ""),
+                .define("SWIFT_PACKAGE"),
+                .unsafeFlags(["-Wno-shorten-64-to-32"])
+            ]
+	)
     ]
 )
