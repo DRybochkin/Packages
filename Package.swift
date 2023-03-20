@@ -24,8 +24,8 @@ let package = Package(
        ),
         .binaryTarget(
             name: "OKTracer",
-            url: "https://github.com/DRybochkin/Packages/files/11015698/OKTracer.xcframework.zip",
-            checksum: "db12c7d056ef0cbea2a31bbb56a8bddc39ab46a54355e80b587cd4b6c9b95dfc",
+            url: "https://github.com/DRybochkin/Packages/files/11016003/OKTracer.xcframework.zip",
+            checksum: "31d2aff69c034f56bb76bbdf37a26e3eb5f058dbf74cc469a0acf06db14976a6",
             linkerSettings: [
                 .linkedFramework("Foundation"),
                 .linkedFramework("UIKit"),
