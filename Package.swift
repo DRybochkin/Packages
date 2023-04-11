@@ -21,10 +21,10 @@ let package = Package(
             swiftSettings: [
                 .define("TRACER_SPM"),
             ]
-       ),
+        ),
         .binaryTarget(
             name: "OKTracer",
-            url: "https://github.com/DRybochkin/Packages/files/11158460/OKTracer.xcframework.zip",
-            checksum: "1d506114696849069691d2c9620f88f18f16250e0343460c616a4c2bdff35db0")
+            url: "https://nexus.odkl.ru/repository/dists/ios-debug-symbols/OKTracer/xcframeworks/0.0.12/OKTracer.xcframework.zip",
+            checksum: "5c5d13f73b60c243ce991261ab9341e3c9b8d8767e83b9271a9ecba0be870cec")
     ]
 )
