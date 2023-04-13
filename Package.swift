@@ -10,11 +10,14 @@ let package = Package(
     products: [
         .library(
             name: "OKTracerPackage",
-            targets: ["OKTracer"]),
+            targets: ["OKTracer", "OKTracer.bundle"]),
     ],
     dependencies: [
     ],
     targets: [
+        .target(
+            name: "OKTracer.bundle", resources: [.process("OKTracer.bundle")]
+        ),
         .binaryTarget(
             name: "OKTracer",
             url: "https://nexus.odkl.ru/repository/dists/ios-debug-symbols/OKTracer/xcframeworks/0.1.19.14/OKTracer.xcframework.zip",
