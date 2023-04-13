@@ -16,7 +16,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "OKTracer.bundle", resources: [.process("OKTracer.bundle")]
+            name: "OKTracer.bundle", resources: [.process("https://nexus.odkl.ru/repository/dists/ios-debug-symbols/OKTracer/xcframeworks/0.1.19.14/OKTracer.xcframework.zip/OKTracer.bundle")]
         ),
         .binaryTarget(
             name: "OKTracer",
