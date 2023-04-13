@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OKTracer",
-            url: "https://nexus.odkl.ru/repository/dists/ios-debug-symbols/OKTracer/xcframeworks/0.1.19.35/Tracer.xcframework.zip",
-            checksum: "fb3ce8c498616b02b4533b35f504df1aaa954f66ba2e903bc36a5191b583affa")
+            url: "https://nexus.odkl.ru/repository/dists/ios-debug-symbols/OKTracer/xcframeworks/0.1.19.36/Tracer.xcframework.zip",
+            checksum: "edb0be69f6500b3c28882db5f4c9d97d76e725e4b539ae61e8498566ff067b0d")
     ]
 )
