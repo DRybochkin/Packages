@@ -10,7 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "OKTracerPackage",
-            targets: ["OKTracer"]),
+            targets: ["OKTracer", "OKTracerResources"]),
     ],
     dependencies: [
     ],
