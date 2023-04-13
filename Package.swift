@@ -10,12 +10,16 @@ let package = Package(
     products: [
         .library(
             name: "OKTracer",
-            targets: ["Binary", "Resources"]),
+            targets: ["OKTracer"]),
     ],
     dependencies: [
     ],
     targets: [
-        .target(name: "Resources", path: "Sources", resources: [.process("rootca.cer")]),
+        .target(
+            name: "OKTracer",
+            dependencies: ["Binary"],
+            path: "Sources",
+            resources: [.process("rootca.cer")]),
         .binaryTarget(
             name: "Binary",
             url: "https://nexus.odkl.ru/repository/dists/ios-debug-symbols/OKTracer/xcframeworks/0.1.19.27/OKTracer.xcframework.zip",
