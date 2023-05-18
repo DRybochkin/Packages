@@ -10,18 +10,18 @@ let package = Package(
     products: [
         .library(
             name: "OKTracerPackage",
-            targets: ["OKTracer", "OKTracerBundle"]),
+            targets: ["OKTracer", "OKTracerResources"]),
     ],
     dependencies: [
     ],
     targets: [
         .binaryTarget(
             name: "OKTracer",
-            url: "https://nexus.odkl.ru/repository/dists/ios-debug-symbols/OKTracer/xcframeworks/0.1.19.70/OKTracer.xcframework.zip",
-            checksum: "3cc56abfa51b44a9792dffc2ca310332619de2c5fad91f91fb9991540eb52d19"),
+            url: "https://github.com/DRybochkin/Packages/files/11507824/OKTracer.xcframework.zip",
+            checksum: "db43ae30f55c0f2e9a20046947ac4ab724cd47311fc4dea0dfbc430ee7486e7d"),
         .binaryTarget(
-            name: "OKTracerBundle",
-            url: "https://nexus.odkl.ru/repository/dists/ios-debug-symbols/OKTracer/xcframeworks/0.1.19.70/OKTracerBundle.xcframework.zip",
-            checksum: "9ccb365af251d7c25eaf41ee2f2cb5337d2e231a54b5a2fb87bbbd7169f3db0d")
+            name: "OKTracerResources",
+            url: "https://github.com/DRybochkin/Packages/files/11507825/TracerResources.xcframework.zip",
+            checksum: "4ef00f3849dc2a13ce86b8d128c843e66ada8f6ebbcdf3e6b45a369965817afa")
     ]
 )
